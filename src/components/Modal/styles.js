@@ -8,8 +8,6 @@ export const ModalBackground = styled.div`
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: grid;
-  visibility: ${props => (props.open ? `visible` : `hidden`)};
-  opacity: ${props => (props.open ? `1` : `0`)};
   transition: 0.5s;
   z-index: 2;
 `

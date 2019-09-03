@@ -8,25 +8,35 @@ import {
   ModalHeaderClose,
 } from "./styles"
 import IconCross from "../icons/Cross"
+import { useSpring, animated } from "react-spring"
+
+const AnimatedModalContainer = animated(ModalContainer)
 
 export default function Modal({ isOpen, onClose, title, children }) {
+  const contentProps = useSpring({
+    opacity: isOpen ? 1 : 0,
+    config: { duration: 100 },
+  })
+
+  useEffect(() => {
+    window.addEventListener("keydown", onEscKeyDown, false)
+
+    return () => {
+      window.removeEventListener("keydown", onEscKeyDown, false)
+    }
+  }, [isOpen])
+
   const onEscKeyDown = e => {
     if (e.key !== "Escape") return
 
     onClose()
   }
-  if (isOpen) {
-    useEffect(() => {
-      window.addEventListener("keydown", onEscKeyDown, false)
 
-      return () => {
-        window.removeEventListener("keydown", onEscKeyDown, false)
-      }
-    }, [isOpen])
+  if (isOpen) {
     return (
       <ModalBackground open={isOpen} onClick={onClose}>
-        <ModalContainer
-          open={isOpen}
+        <AnimatedModalContainer
+          style={contentProps}
           onClick={event => event.stopPropagation()}
         >
           <ModalHeader>
@@ -36,7 +46,7 @@ export default function Modal({ isOpen, onClose, title, children }) {
             </ModalHeaderClose>
           </ModalHeader>
           {children}
-        </ModalContainer>
+        </AnimatedModalContainer>
       </ModalBackground>
     )
   } else {
