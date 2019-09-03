@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `sportconsulting.ca`,
-    description: `SportConsulting.ca provides services for athletes and teams, which can help improve their performance and achieve their goals.`,
+    description: `Sportconsulting.ca provides services for athletes and teams that help improve their performance and achieve goals.`,
+    keywords: `sport consulting, players, teams, professional, semi-pro, amateur, personal trainer, sport nutrition, DISC, personality test, athlete performance, baseball, basketball, football, hockey, soccer, lacrosse, Frisbee ultimate, tennis, swimming, try-out, college`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

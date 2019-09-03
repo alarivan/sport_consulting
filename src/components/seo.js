@@ -11,6 +11,7 @@ function SEO({ description, lang, meta, title }) {
           siteMetadata {
             title
             description
+            keywords
           }
         }
       }
@@ -27,6 +28,10 @@ function SEO({ description, lang, meta, title }) {
       }}
       title={metaTitle}
       meta={[
+        {
+          name: `keywords`,
+          content: site.siteMetadata.keywords,
+        },
         {
           name: `description`,
           content: metaDescription,
@@ -56,7 +61,9 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      <link rel="canonical" href="https://sportconsulting.ca" />
+    </Helmet>
   )
 }
 
