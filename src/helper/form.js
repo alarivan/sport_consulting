@@ -22,6 +22,7 @@ export const options = [
   { value: "workshop", label: "Workshop" },
   { value: "personal-training", label: "Personal Training" },
   { value: "nutrition", label: "Nutrition" },
+  { value: "disc", label: "DISC – Personality Test" },
 ]
 
 export const initialValues = {
