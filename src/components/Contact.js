@@ -14,6 +14,12 @@ const Label = styled.label`
 const Value = styled.div`
   display: block;
   font-weight: 600;
+  max-width: 500px;
+  margin: 0 auto;
+`
+
+const Block = styled.div`
+  margin-bottom: 1rem;
 `
 
 export default () => {
@@ -35,21 +41,21 @@ export default () => {
       <Row style={{ width: "100%" }} gutter={0} justifyContent="center">
         <Col gutter={0} xs={10} md={8} alignSelf="center">
           <Content style={{ textAlign: "center" }}>
-            <p>
+            <Block>
               <Label>Email:</Label>
 
               <Value>
                 <a href={`mailto:${email}`}>{email}</a>
               </Value>
-            </p>
-            <p>
+            </Block>
+            <Block>
               <Label>Phone:</Label>
               <Value>{phone}</Value>
-            </p>
-            <p>
+            </Block>
+            <Block>
               <Label>Address:</Label>
               <Value>{address}</Value>
-            </p>
+            </Block>
           </Content>
         </Col>
       </Row>
