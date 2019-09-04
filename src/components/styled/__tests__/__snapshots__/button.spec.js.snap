@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: #fff;
+  -webkit-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+}
+
+.c0:disabled {
+  background: #b4b6b8;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    Label
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button renders correctly with block modifier 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: block;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: #fff;
+  -webkit-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+}
+
+.c0:disabled {
+  background: #b4b6b8;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    Label
+  </button>
+</DocumentFragment>
+`;
+
+exports[`Button renders correctly with theme 1`] = `
+<DocumentFragment>
+  .c0 {
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: #1171b7;
+  color: #fff;
+  -webkit-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+}
+
+.c0:not(:disabled):hover,
+.c0:not(:disabled):focus,
+.c0:not(:disabled):active {
+  background-color: #158ee6;
+}
+
+.c0:disabled {
+  background: #b4b6b8;
+  cursor: not-allowed;
+}
+
+<button
+    class="c0"
+  >
+    Label
+  </button>
+</DocumentFragment>
+`;

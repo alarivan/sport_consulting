@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+}
+
+<svg
+    class="c0"
+  />
+</DocumentFragment>
+`;
+
+exports[`Button renders correctly with theme 1`] = `
+<DocumentFragment>
+  .c0 {
+  display: block;
+  fill: #444444;
+  width: 1rem;
+  height: 1rem;
+}
+
+<svg
+    class="c0"
+  />
+</DocumentFragment>
+`;

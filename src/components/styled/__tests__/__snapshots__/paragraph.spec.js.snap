@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Paragraph renders correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+<p
+    class="c0"
+  >
+    Content
+  </p>
+</DocumentFragment>
+`;
+
+exports[`Paragraph renders correctly with bold 1`] = `
+<DocumentFragment>
+  .c0 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+<p
+    class="c0"
+  >
+    Content
+  </p>
+</DocumentFragment>
+`;
