@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UnorderedList renders correctly with items 1`] = `
+<DocumentFragment>
+  .c0 {
+  font-size: 1.2rem;
+}
+
+.c0 > li {
+  margin-bottom: 2rem;
+}
+
+<ul
+    class="c0"
+  >
+    <li>
+      item 1
+    </li>
+    <li>
+      item 2
+    </li>
+  </ul>
+</DocumentFragment>
+`;
+
+exports[`UnorderedList renders correctly without items 1`] = `
+<DocumentFragment>
+  .c0 {
+  font-size: 1.2rem;
+}
+
+.c0 > li {
+  margin-bottom: 2rem;
+}
+
+<ul
+    class="c0"
+  />
+</DocumentFragment>
+`;
