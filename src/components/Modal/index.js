@@ -34,14 +34,21 @@ export default function Modal({ isOpen, onClose, title, children }) {
 
   if (isOpen) {
     return (
-      <ModalBackground open={isOpen} onClick={onClose}>
+      <ModalBackground
+        data-testid="modal-background"
+        open={isOpen}
+        onClick={onClose}
+      >
         <AnimatedModalContainer
           style={contentProps}
           onClick={event => event.stopPropagation()}
         >
           <ModalHeader>
             <ModalHeaderTitle>{title || ""}</ModalHeaderTitle>
-            <ModalHeaderClose onClick={onClose}>
+            <ModalHeaderClose
+              data-testid="modal-header-close"
+              onClick={onClose}
+            >
               <IconCross />
             </ModalHeaderClose>
           </ModalHeader>

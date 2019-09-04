@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal/index renders correctly 1`] = `
+<DocumentFragment>
+  .c0 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: grid;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.c1 {
+  max-height: 100%;
+  background: #fff;
+  box-sizing: border-box;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  justify-self: center;
+  max-width: 480px;
+  padding: 1rem;
+  width: 100%;
+  position: relative;
+  overflow: auto;
+  -webkit-transition: opacity 400ms ease-in-out;
+  transition: opacity 400ms ease-in-out;
+  box-shadow: 0 0 3rem black;
+  margin: calc(0.5rem + 2vw);
+}
+
+.c2 {
+  padding: 0 0 0.5rem 0;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid;
+}
+
+.c3 {
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0 0.5rem 0 0;
+}
+
+.c4 {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.c4:hover {
+  opacity: 0.7;
+}
+
+.c5 {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+}
+
+<div
+    class="c0"
+    data-testid="modal-background"
+    open=""
+  >
+    <div
+      class="c1"
+      style="opacity: 1;"
+    >
+      <header
+        class="c2"
+      >
+        <h1
+          class="c3"
+        >
+          Title
+        </h1>
+        <button
+          class="c4"
+          data-testid="modal-header-close"
+        >
+          <svg
+            class="c5"
+            viewBox="0 0 32 32"
+          >
+            <path
+              d="M31.708 25.708c-0-0-0-0-0-0l-9.708-9.708 9.708-9.708c0-0 0-0 0-0 0.105-0.105 0.18-0.227 0.229-0.357 0.133-0.356 0.057-0.771-0.229-1.057l-4.586-4.586c-0.286-0.286-0.702-0.361-1.057-0.229-0.13 0.048-0.252 0.124-0.357 0.228 0 0-0 0-0 0l-9.708 9.708-9.708-9.708c-0-0-0-0-0-0-0.105-0.104-0.227-0.18-0.357-0.228-0.356-0.133-0.771-0.057-1.057 0.229l-4.586 4.586c-0.286 0.286-0.361 0.702-0.229 1.057 0.049 0.13 0.124 0.252 0.229 0.357 0 0 0 0 0 0l9.708 9.708-9.708 9.708c-0 0-0 0-0 0-0.104 0.105-0.18 0.227-0.229 0.357-0.133 0.355-0.057 0.771 0.229 1.057l4.586 4.586c0.286 0.286 0.702 0.361 1.057 0.229 0.13-0.049 0.252-0.124 0.357-0.229 0-0 0-0 0-0l9.708-9.708 9.708 9.708c0 0 0 0 0 0 0.105 0.105 0.227 0.18 0.357 0.229 0.356 0.133 0.771 0.057 1.057-0.229l4.586-4.586c0.286-0.286 0.362-0.702 0.229-1.057-0.049-0.13-0.124-0.252-0.229-0.357z"
+            />
+          </svg>
+        </button>
+      </header>
+      Content
+    </div>
+  </div>
+</DocumentFragment>
+`;
