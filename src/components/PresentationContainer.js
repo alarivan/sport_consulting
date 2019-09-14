@@ -46,7 +46,7 @@ export default ({
       render={data => (
         <>
           <Modal
-            title="Book Your First Free Consultancy"
+            title="Book Your Free Consultation"
             isOpen={isModalOpen}
             onClose={onModalCloseClick}
           >
@@ -74,7 +74,7 @@ export default ({
 
               <div style={{ textAlign: "center" }}>
                 <Button onClick={onModalOpenClick}>
-                  Book Your First Free Consultancy
+                  Book Your Free Consultation
                 </Button>
               </div>
             </Section>
