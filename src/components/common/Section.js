@@ -12,6 +12,8 @@ const Image = styled.img`
   margin: 0 auto;
   border-radius: 1em;
   padding: 0.5rem;
+  max-width: 600px;
+  width: 100%;
 `
 
 export default ({ reverse, title, showTitle, image, children }) => {

@@ -29,8 +29,8 @@ export default ({
                 title
                 reverse
                 image {
-                  file {
-                    url
+                  fluid(maxWidth: 600) {
+                    src
                   }
                 }
                 body {
@@ -66,7 +66,7 @@ export default ({
               key={index}
               title={section.node.title}
               showTitle={section.node.showTitle}
-              image={section.node.image.file.url}
+              image={section.node.image.fluid.src}
             >
               <div style={{ marginBottom: "1.5rem" }}>
                 {documentToReactComponents(section.node.body.json)}
