@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import { Row, Col } from "react-flexa"
 import { graphql, useStaticQuery } from "gatsby"
 
 import Title from "./styled/Title.css.js"
@@ -22,6 +21,12 @@ const Block = styled.div`
   margin-bottom: 1rem;
 `
 
+const Inner = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
 export default () => {
   const data = useStaticQuery(graphql`
     query ContactInfoQuery {
@@ -38,27 +43,25 @@ export default () => {
   return (
     <Section>
       <Title>{title}</Title>
-      <Row style={{ width: "100%" }} gutter={0} justifyContent="center">
-        <Col gutter={0} xs={10} md={8} alignSelf="center">
-          <Content style={{ textAlign: "center" }}>
-            <Block>
-              <Label>Email:</Label>
+      <Inner>
+        <Content style={{ textAlign: "center" }}>
+          <Block>
+            <Label>Email:</Label>
 
-              <Value>
-                <a href={`mailto:${email}`}>{email}</a>
-              </Value>
-            </Block>
-            <Block>
-              <Label>Phone:</Label>
-              <Value>{phone}</Value>
-            </Block>
-            <Block>
-              <Label>Address:</Label>
-              <Value>{address}</Value>
-            </Block>
-          </Content>
-        </Col>
-      </Row>
+            <Value>
+              <a href={`mailto:${email}`}>{email}</a>
+            </Value>
+          </Block>
+          <Block>
+            <Label>Phone:</Label>
+            <Value>{phone}</Value>
+          </Block>
+          <Block>
+            <Label>Address:</Label>
+            <Value>{address}</Value>
+          </Block>
+        </Content>
+      </Inner>
     </Section>
   )
 }

@@ -1,6 +1,5 @@
 import React from "react"
 import styled, { keyframes } from "styled-components"
-import { Row, Col } from "react-flexa"
 import { graphql, useStaticQuery } from "gatsby"
 import ArrowDown from "./icons/ArrowDown.js"
 import Logo from "./logo"
@@ -36,6 +35,17 @@ const CenteredArrowDown = styled(ArrowDown)`
   margin: 0 auto;
 `
 
+const SBanner = styled.div`
+  display: flex;
+  height: 100vh;
+  position: relative;
+  justify-content: center;
+`
+
+const Inner = styled.div`
+  align-self: center;
+`
+
 export default () => {
   const data = useStaticQuery(graphql`
     query MainInfoQuery {
@@ -47,12 +57,8 @@ export default () => {
   const { tagline } = data.mainJson
 
   return (
-    <Row
-      gutter={0}
-      style={{ height: "100vh", position: "relative" }}
-      justifyContent="center"
-    >
-      <Col xs={12} gutter={0} alignSelf="center">
+    <SBanner>
+      <Inner>
         <div style={{ padding: "1rem" }}>
           <LogoWrapper>
             <Logo />
@@ -62,7 +68,7 @@ export default () => {
         <Arrow>
           <CenteredArrowDown />
         </Arrow>
-      </Col>
-    </Row>
+      </Inner>
+    </SBanner>
   )
 }
