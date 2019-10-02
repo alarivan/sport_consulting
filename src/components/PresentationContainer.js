@@ -30,7 +30,7 @@ export default ({
                 reverse
                 image {
                   fluid(maxWidth: 600) {
-                    src
+                    ...GatsbyContentfulFluid_withWebp
                   }
                 }
                 body {
@@ -66,7 +66,7 @@ export default ({
               key={index}
               title={section.node.title}
               showTitle={section.node.showTitle}
-              image={section.node.image.fluid.src}
+              image={section.node.image.fluid}
             >
               <div style={{ marginBottom: "1.5rem" }}>
                 {documentToReactComponents(section.node.body.json)}
